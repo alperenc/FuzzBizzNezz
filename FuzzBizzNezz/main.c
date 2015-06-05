@@ -9,7 +9,19 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    int counter = 1;
+    while (counter <= 100) {
+        if (counter % 3 == 0 && counter % 5 == 0) {
+            printf("FizzBuzz\n");
+        } else if (counter % 3 == 0) {
+            printf("Fizz\n");
+        } else if (counter % 5 == 0) {
+            printf("Buzz\n");
+        } else {
+            printf("%i\n", counter);
+        }
+        counter++;
+    }
     return 0;
 }
